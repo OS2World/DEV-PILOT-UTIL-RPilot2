@@ -1,0 +1,31 @@
+Tips for RPilot on OS/2 (RPilot/2)
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+[If you are viewing this with the OS/2 System Editor, you may want tot turn Word Wrap on]
+
+As RPilot/2 is a 32 bit program, it requires OS/2 2.0 or better.  I don't think that this is a
+problem, since not many people seem to use the 1.x versions.  RPilot/2 has only been tested on
+Warp 3, but there shouldn't be problems with either 2.x or 4.
+
+RPilot/2 was compiled with EMX .9c (gcc 2.7.2.1).  It is very likely that it will compile under
+other systems, such as Borland C++, or IBM's C/Set[++].
+
+About the icon:
+RPilot/2 comes with a standard icon.  And It might not be a bad idea to replace said icon with a
+better one, because I have no artistic talent.  If anyone has a better icon, please send me a
+note!
+
+If you want to be able to click on a PILOT program to run it, open up RPilot/2's settings page, and click on the "Association" tab.  Type "*.P" into the "New name" box, and click "Add>>".  Now, whenver you click on a file with a .P extension, RPilot will load and run it.
+
+The "rstring.*" files contain two functions which are sometimes included
+in a compiler's standard library.  They are strupr() and strset().  Borland
+and MS C compilers have these two functions.  EMX has strupr(), but not strset().
+They aren't listed as part of the standard C library by either Borland or as such
+in the _Essential_Guide_to_ANSI_C_, so you may or may not have to link them in.
+Check your compiler's documentation if you're not sure.
+
+Linux users: Please note that there is also a native Linux version of RPilot!
+DOS users: Please note that there is also a native DOS version of RPilot!
+
+
+

@@ -1,0 +1,34 @@
+# DJGPP makefile for rpilot
+# You probably want to use GNU make with this
+# Rob Linwood (auntfloyd@biosys.net)
+
+CC=gcc
+CCFLAGS=-O2
+DESTDIR=.
+CP=copy
+RM=del
+EXE=.exe
+OBJS= rpilot.o parse.o rstring.o
+
+.c.o:
+	$(CC) $(CCFLAGS) -c $<
+
+all :   rpilot
+
+rpilot  :   $(OBJS)
+	$(CC) $(CCFLAGS) -o rpilot $(OBJS)
+#    $(CP) rpilot$(EXE) $(DESTDIR)
+
+rstring : rstring.o
+	$(CC) $(CCFLAGS) -DSTANDALONE rstring$(EXE) rstring.o
+
+parse : parse.o
+	$(CC) $(CCFLAGS) -DSTANDALONE parse$(EXE) parse.o
+
+clean :
+	$(RM) *.o
+
+uninstall :
+#        cd $(DESTDIR)
+	$(RM) rpilot$(EXE)
+

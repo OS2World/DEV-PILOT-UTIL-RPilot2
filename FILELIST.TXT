@@ -1,0 +1,31 @@
+File List for RPilot 1.01 (OS/2) distribution
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+ Name              Description
+ ============      ==========================================================
+ changes.txt       Log of changes to RPilot
+ copying.txt       RPilot's license (GPL).  Not a very exciting read.
+ crazy.p           Example PILOT program
+ dosmenu.p         Example PILOT program
+ examples.txt      A list of the example programs with descriptions
+ fact.p            Example PILOT program
+ filelist.txt      This file 
+ french.p          Example PILOT program
+ guess.p           Example PILOT program
+ hello.p           Example PILOT program
+ jump-use.p        Example PILOT program
+ makefile          EMX/Generic Makefile
+ math.p            Example PILOT program
+ name.p            Example PILOT program
+ os2.txt           Notes on Running/Compiling RPilot under OS/2
+ parse.c           Source to the string parsing/searching code
+ parse.h           Header for parse.c
+ recurse.p         Example PILOT program
+ rpilot.c          Main source file for RPilot
+ RPilot/2          RPilot executable program
+ RPilot/2.ico      Cheesy icon for RPilot/2
+ rpilot.txt        The documentation for RPilot
+ rstring.c         Supplementry string handling functions (see os2.txt)
+ rstring.h         Header for rstring.c
+ unixmenu.p        Example PILOT program 
+
